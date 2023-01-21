@@ -106,4 +106,14 @@ private:    //PRIVATE SHA FUNCTION
     }
  };
 
+//以下函数用于提供一些常见 Type 的分解
+
+/// <summary>
+/// 用于分解 std::string 类型的消息
+/// </summary>
+/// <param name="object">计算哈希的对象 (class) </param>
+/// <param name="MESSAGE">要分解的消息</param>
+/// <returns>是否分解成功</returns>
 bool setMessage_StdStr(SHA2_SHA256& object, const std::string& const MESSAGE);
+
+
