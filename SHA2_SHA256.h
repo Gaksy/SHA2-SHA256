@@ -6,9 +6,6 @@
 //参考规范文档：    FEDERAL INFORMATION PROCESSING STANDARDS
 //                  PUBLICATION 180-4
 //                  Secure Hash Standard (SHS)
-//
-//使用命名空间：   GKCODE::SHA
-
 #include <inttypes.h>
 #include <string>
 #include <math.h>
