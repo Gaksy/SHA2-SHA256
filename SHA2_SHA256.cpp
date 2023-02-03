@@ -132,6 +132,9 @@ bool SHA2_SHA256::get_calculationShaVal(std::string& shaVal)const {
             if (Quotients != static_cast<uint32_t>(0))
                 _16NumSystem += NS_16_SYBSET[Quotients];
             std::reverse(_16NumSystem.begin(), _16NumSystem.end());
+            if (_16NumSystem.length() != 8) {   //针对哈希计算，当值不足八位时右边补零
+                _16NumSystem.insert(_16NumSystem.begin(), 8 - _16NumSystem.length(),'0');
+            }
         }
         return _16NumSystem;
     };
